@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 import WorkoutSelector from './components/WorkoutSelector.vue'
 import WorkoutDisplay from './components/WorkoutDisplay.vue'
 
@@ -8,7 +8,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
