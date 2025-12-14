@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import WorkoutSelector from './components/WorkoutSelector.vue';
+
 </script>
 
 <template>
+  <strong>Current route path:</strong> {{ $route.fullPath }}
   <div class="mt-6">
-    <WorkoutSelector/>
+    <RouterView/>
   </div>
 </template>
 

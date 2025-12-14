@@ -81,7 +81,10 @@
 
 <script setup>
 import { ref, reactive, computed } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
+const router = useRouter()
+const route = useRoute()
 const cardioStrength = ref(50); // 0 = cardio, 100 = strength
 const difficulty = ref(50);
 const length = ref(50);
@@ -138,7 +141,7 @@ const encodedJSON = ref("");
 function generateEncodedURL() {
   const jsonString = JSON.stringify(workoutConfig.value);
   const encoded = encodeURIComponent(jsonString);
-  window.open(`/workout?config=${encoded}`, "_blank");
+  router.push({ path: '/show-workout', query: { workoutConfig: encoded }})
 }
 </script>
 
