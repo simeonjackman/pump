@@ -24,13 +24,9 @@
 
 <script setup>
 import ExerciseCard from './ExerciseCard.vue'
-import json from "../assets/exercises.json";
+import exercises from "../workout.js";
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-
-const exercises = json.exercises;
-console.log(exercises);
-
 
 const route = useRoute()
 const decodedConfig = ref(null);
