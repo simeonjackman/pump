@@ -8,7 +8,7 @@
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
   
-    // Das ist der Standardport, der von vite genutzt wird. Wir leiten diesen
+    // Das ist der Standardport, der von vue genutzt wird. Wir leiten diesen
     // weiter, damit wir die Webseite von aussen zugreifen können.
     "forwardPorts": [5173],
   
