@@ -68,7 +68,7 @@
       </div>
     </div>
 
-    <button type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full">Build Workout</button>
+    <button @click="generateEncodedURL" type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full">Build Workout</button>
 
     <!-- Output JSON -->
     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
@@ -129,6 +129,16 @@ const workoutConfig = computed(() => ({
   length: length.value,
   muscle_usage: { ...muscles },
 }));
+
+// Encoded JSON string
+const encodedJSON = ref("");
+
+// Function to encode JSON
+function generateEncodedURL() {
+  const jsonString = JSON.stringify(workoutConfig.value);
+  const encoded = encodeURIComponent(jsonString);
+  window.open(`/workout?config=${encoded}`, "_blank");
+}
 </script>
 
 <style scoped>
