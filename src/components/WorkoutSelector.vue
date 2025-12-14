@@ -1,5 +1,5 @@
 <template>
-  <div class="workout-selector max-w-md mx-auto p-6 bg-white rounded-2xl shadow-lg">
+  <div class="workout-selector p-6 bg-white rounded-2xl shadow-lg">
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Build your own Workout</h2>
     <p class="mb-6 text-center text-gray-800">Customize Your Workout by selecting your preferences and hitting the <i>Generate Workout</i> button.</p>
 
