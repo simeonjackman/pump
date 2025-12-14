@@ -68,6 +68,8 @@
       </div>
     </div>
 
+    <button type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full">Build Workout</button>
+
     <!-- Output JSON -->
     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
       <h4 class="font-semibold text-gray-700 mb-2">Selected Configuration</h4>
