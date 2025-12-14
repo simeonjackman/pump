@@ -1,6 +1,7 @@
 <template>
   <div class="mx-auto p-1 lg:p-6 bg-white rounded-2xl shadow-lg">
-    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Workout from URL</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Your Workout</h2>
+    <p class="mb-4 text-gray-700"> Click on a exercise to see more information.</p>
 
     <div class="p-1 lg:p-6">
         <ExerciseCard
