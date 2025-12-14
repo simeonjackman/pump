@@ -12,7 +12,7 @@
         min="0"
         max="100"
         v-model="cardioStrength"
-        class="w-full h-2 bg-gray-200 rounded-lg accent-indigo-600"
+        class="w-full h-2 bg-gray-200 rounded-lg accent-green-700"
       />
       <div class="flex justify-between text-sm text-gray-500 mt-1">
         <span>Cardio</span>
@@ -30,7 +30,7 @@
         min="0"
         max="100"
         v-model="difficulty"
-        class="w-full h-2 bg-gray-200 rounded-lg accent-green-500"
+        class="w-full h-2 bg-gray-200 rounded-lg accent-green-700"
       />
     </div>
 
@@ -44,7 +44,7 @@
         min="20"
         max="120"
         v-model="length"
-        class="w-full h-2 bg-gray-200 rounded-lg accent-green-500"
+        class="w-full h-2 bg-gray-200 rounded-lg accent-green-700"
       />
     </div>
 
@@ -63,12 +63,12 @@
           max="100"
           :value="value"
           @input="updateMuscle(muscle, $event.target.value)"
-          class="w-full h-2 bg-gray-200 rounded-lg accent-pink-500"
+          class="w-full h-2 bg-gray-200 rounded-lg accent-green-700"
         />
       </div>
     </div>
 
-    <button @click="generateEncodedURL" type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full">Build Workout</button>
+    <button @click="generateEncodedURL" type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full bg-green-500">Build Workout</button>
 
     <!-- Output JSON -->
     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
