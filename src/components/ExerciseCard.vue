@@ -78,11 +78,3 @@ defineProps({
 // Track whether details are shown
 const showDetails = ref(false);
 </script>
-
-<style scoped>
-div > div.bg-indigo-600,
-div > div.bg-green-500,
-div > div.bg-pink-500 {
-  transition: width 0.5s ease;
-}
-</style>
