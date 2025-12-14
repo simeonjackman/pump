@@ -34,6 +34,20 @@
       />
     </div>
 
+    <!-- Length -->
+    <div class="mb-6">
+      <label class="block text-gray-700 font-semibold mb-2">
+        Length: <span class="font-bold">{{ length }} minutes</span>
+      </label>
+      <input
+        type="range"
+        min="20"
+        max="120"
+        v-model="length"
+        class="w-full h-2 bg-gray-200 rounded-lg accent-green-500"
+      />
+    </div>
+
     <!-- Muscle Groups -->
     <div class="mb-6">
       <h3 class="text-gray-700 font-semibold mb-3 text-lg">
@@ -67,6 +81,7 @@ import { ref, reactive, computed } from 'vue';
 
 const cardioStrength = ref(50); // 0 = cardio, 100 = strength
 const difficulty = ref(50);
+const length = ref(50);
 
 // Initialize muscle group percentages (sum = 300)
 const muscles = reactive({
@@ -109,6 +124,7 @@ function updateMuscle(changedMuscle, newValue) {
 const workoutConfig = computed(() => ({
   cardio_vs_strength: cardioStrength.value,
   difficulty: difficulty.value,
+  length: length.value,
   muscle_usage: { ...muscles },
 }));
 </script>
