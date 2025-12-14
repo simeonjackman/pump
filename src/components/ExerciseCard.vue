@@ -2,6 +2,7 @@
   <div class="exercise-card bg-white shadow-md rounded-xl p-6 mb-6 border border-gray-200">
     <!-- Exercise Name -->
     <h3 class="text-xl font-bold mb-4 text-gray-800">{{ exercise.name }}</h3>
+    <p class="mb-6">{{ exercise.description }}</p>
     <!-- Cardio vs Strength -->
     <div class="mb-4">
       <label class="block text-gray-700 font-medium mb-1">Cardio vs Strength: {{ exercise.cardio_vs_strength }}</label>

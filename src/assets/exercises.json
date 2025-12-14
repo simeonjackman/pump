@@ -2,6 +2,7 @@
   "exercises": [
     {
       "name": "Pull-ups",
+      "description": "Hang from a bar and pull your body up until your chin is above the bar.",
       "cardio_vs_strength": 20,
       "difficulty": 80,
       "muscle_usage": {
@@ -15,6 +16,7 @@
     },
     {
       "name": "Push-ups",
+      "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",
       "cardio_vs_strength": 10,
       "difficulty": 60,
       "muscle_usage": {
@@ -28,6 +30,7 @@
     },
     {
       "name": "Dips",
+      "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
       "cardio_vs_strength": 15,
       "difficulty": 70,
       "muscle_usage": {
@@ -41,6 +44,7 @@
     },
     {
       "name": "Squats",
+      "description": "Bend your knees and lower your hips, then stand back up, engaging your legs and glutes.",
       "cardio_vs_strength": 30,
       "difficulty": 50,
       "muscle_usage": {
@@ -54,6 +58,7 @@
     },
     {
       "name": "Lunges",
+      "description": "Step forward with one leg, lower your body, then push back to starting position.",
       "cardio_vs_strength": 25,
       "difficulty": 55,
       "muscle_usage": {
@@ -67,6 +72,7 @@
     },
     {
       "name": "Burpees",
+      "description": "A full-body exercise involving a squat, plank, and jump.",
       "cardio_vs_strength": 80,
       "difficulty": 75,
       "muscle_usage": {
@@ -80,6 +86,7 @@
     },
     {
       "name": "Monkey Bars",
+      "description": "Swing across bars using your arms, great for upper body strength.",
       "cardio_vs_strength": 40,
       "difficulty": 70,
       "muscle_usage": {
@@ -93,6 +100,7 @@
     },
     {
       "name": "Step-ups",
+      "description": "Step onto a raised platform and back down, engaging legs and glutes.",
       "cardio_vs_strength": 35,
       "difficulty": 45,
       "muscle_usage": {
@@ -106,6 +114,7 @@
     },
     {
       "name": "Plank",
+      "description": "Hold a push-up position to strengthen core muscles.",
       "cardio_vs_strength": 5,
       "difficulty": 50,
       "muscle_usage": {
@@ -119,6 +128,7 @@
     },
     {
       "name": "Jump Rope",
+      "description": "Jump continuously over a rope, great for cardio and coordination.",
       "cardio_vs_strength": 90,
       "difficulty": 60,
       "muscle_usage": {
