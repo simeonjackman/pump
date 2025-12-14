@@ -1,0 +1,134 @@
+{
+  "exercises": [
+    {
+      "name": "Pull-ups",
+      "cardio_vs_strength": 20,
+      "difficulty": 80,
+      "muscle_usage": {
+        "arms": 90,
+        "back": 85,
+        "abs": 30,
+        "legs": 10,
+        "chest": 40,
+        "glutes": 10
+      }
+    },
+    {
+      "name": "Push-ups",
+      "cardio_vs_strength": 10,
+      "difficulty": 60,
+      "muscle_usage": {
+        "arms": 70,
+        "back": 20,
+        "abs": 50,
+        "legs": 10,
+        "chest": 80,
+        "glutes": 20
+      }
+    },
+    {
+      "name": "Dips",
+      "cardio_vs_strength": 15,
+      "difficulty": 70,
+      "muscle_usage": {
+        "arms": 80,
+        "back": 30,
+        "abs": 20,
+        "legs": 10,
+        "chest": 70,
+        "glutes": 10
+      }
+    },
+    {
+      "name": "Squats",
+      "cardio_vs_strength": 30,
+      "difficulty": 50,
+      "muscle_usage": {
+        "arms": 10,
+        "back": 20,
+        "abs": 40,
+        "legs": 85,
+        "chest": 10,
+        "glutes": 80
+      }
+    },
+    {
+      "name": "Lunges",
+      "cardio_vs_strength": 25,
+      "difficulty": 55,
+      "muscle_usage": {
+        "arms": 10,
+        "back": 15,
+        "abs": 40,
+        "legs": 80,
+        "chest": 10,
+        "glutes": 75
+      }
+    },
+    {
+      "name": "Burpees",
+      "cardio_vs_strength": 80,
+      "difficulty": 75,
+      "muscle_usage": {
+        "arms": 50,
+        "back": 30,
+        "abs": 60,
+        "legs": 70,
+        "chest": 50,
+        "glutes": 60
+      }
+    },
+    {
+      "name": "Monkey Bars",
+      "cardio_vs_strength": 40,
+      "difficulty": 70,
+      "muscle_usage": {
+        "arms": 85,
+        "back": 80,
+        "abs": 40,
+        "legs": 20,
+        "chest": 50,
+        "glutes": 15
+      }
+    },
+    {
+      "name": "Step-ups",
+      "cardio_vs_strength": 35,
+      "difficulty": 45,
+      "muscle_usage": {
+        "arms": 10,
+        "back": 20,
+        "abs": 35,
+        "legs": 75,
+        "chest": 10,
+        "glutes": 70
+      }
+    },
+    {
+      "name": "Plank",
+      "cardio_vs_strength": 5,
+      "difficulty": 50,
+      "muscle_usage": {
+        "arms": 40,
+        "back": 60,
+        "abs": 85,
+        "legs": 20,
+        "chest": 35,
+        "glutes": 30
+      }
+    },
+    {
+      "name": "Jump Rope",
+      "cardio_vs_strength": 90,
+      "difficulty": 60,
+      "muscle_usage": {
+        "arms": 30,
+        "back": 20,
+        "abs": 40,
+        "legs": 80,
+        "chest": 15,
+        "glutes": 50
+      }
+    }
+  ]
+}
