@@ -4,8 +4,9 @@ import WorkoutSelector from './components/WorkoutSelector.vue';
 </script>
 
 <template>
-  <HelloWorld msg="pump.jackman.ch" />
-  <WorkoutSelector/>
+  <div class="mt-6">
+    <WorkoutSelector/>
+  </div>
 </template>
 
 <style scoped>

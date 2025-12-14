@@ -1,6 +1,7 @@
 <template>
   <div class="workout-selector max-w-md mx-auto p-6 bg-white rounded-2xl shadow-lg">
-    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Customize Your Workout</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Build your own Workout</h2>
+    <p class="mb-6 text-center text-gray-800">Customize Your Workout by selecting your preferences and hitting the <i>Generate Workout</i> button.</p>
 
     <!-- Cardio vs Strength -->
     <div class="mb-6">
@@ -68,7 +69,7 @@
       </div>
     </div>
 
-    <button @click="generateEncodedURL" type="button" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full bg-green-500">Build Workout</button>
+    <button @click="generateEncodedURL" type="button" class="font-bold mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full bg-green-500">Generate Workout</button>
 
     <!-- Output JSON -->
     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
