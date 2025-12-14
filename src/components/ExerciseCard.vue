@@ -28,7 +28,9 @@
 
       <!-- Difficulty -->
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-1">Difficulty: {{ exercise.difficulty }}</label>
+        <label class="block text-gray-700 font-medium mb-1"
+          >Difficulty: {{ exercise.difficulty }}</label
+        >
         <div class="w-full bg-gray-200 rounded-full h-3">
           <div
             class="bg-green-500 h-3 rounded-full"
@@ -40,8 +42,14 @@
       <!-- Muscle Group Usage -->
       <div>
         <label class="block text-gray-700 font-medium mb-2">Muscle Usage</label>
-        <div v-for="(value, muscle) in exercise.muscle_usage" :key="muscle" class="mb-2">
-          <div class="flex justify-between mb-1 text-sm text-gray-600 capitalize">
+        <div
+          v-for="(value, muscle) in exercise.muscle_usage"
+          :key="muscle"
+          class="mb-2"
+        >
+          <div
+            class="flex justify-between mb-1 text-sm text-gray-600 capitalize"
+          >
             <span>{{ muscle }}</span>
             <span>{{ value }}</span>
           </div>
@@ -58,13 +66,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 defineProps({
   exercise: {
     type: Object,
-    required: true
-  }
+    required: true,
+  },
 });
 
 // Track whether details are shown

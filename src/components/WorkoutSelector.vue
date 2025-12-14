@@ -1,7 +1,12 @@
 <template>
   <div class="workout-selector p-6 bg-white rounded-2xl shadow-lg">
-    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Build your own Workout</h2>
-    <p class="mb-6 text-center text-gray-800">Customize Your Workout by selecting your preferences and hitting the <i>Generate Workout</i> button.</p>
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+      Build your own Workout
+    </h2>
+    <p class="mb-6 text-center text-gray-800">
+      Customize Your Workout by selecting your preferences and hitting the
+      <i>Generate Workout</i> button.
+    </p>
 
     <!-- Cardio vs Strength -->
     <div class="mb-6">
@@ -69,7 +74,13 @@
       </div>
     </div>
 
-    <button @click="generateEncodedURL" type="button" class="font-bold mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full bg-green-500">Generate Workout</button>
+    <button
+      @click="generateEncodedURL"
+      type="button"
+      class="font-bold mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer w-full bg-green-500"
+    >
+      Generate Workout
+    </button>
 
     <!-- Output JSON -->
     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
@@ -80,11 +91,11 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { ref, reactive, computed } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
-const router = useRouter()
-const route = useRoute()
+const router = useRouter();
+const route = useRoute();
 const cardioStrength = ref(50); // 0 = cardio, 100 = strength
 const difficulty = ref(50);
 const length = ref(50);
@@ -96,7 +107,7 @@ const muscles = reactive({
   abs: 50,
   legs: 50,
   chest: 50,
-  glutes: 50
+  glutes: 50,
 });
 
 // Function to update a muscle while keeping the total 300
@@ -105,20 +116,22 @@ function updateMuscle(changedMuscle, newValue) {
   const oldValue = muscles[changedMuscle];
   const diff = newValue - oldValue;
 
-  const otherMuscles = Object.keys(muscles).filter(m => m !== changedMuscle);
+  const otherMuscles = Object.keys(muscles).filter((m) => m !== changedMuscle);
   let sumOthers = otherMuscles.reduce((sum, m) => sum + muscles[m], 0);
 
   if (sumOthers === 0) {
     // All others are zero, split remaining evenly
     const evenValue = Math.floor((300 - newValue) / otherMuscles.length);
-    otherMuscles.forEach(m => muscles[m] = evenValue);
+    otherMuscles.forEach((m) => (muscles[m] = evenValue));
     muscles[changedMuscle] = newValue;
     return;
   }
 
   // Scale other muscles proportionally
-  otherMuscles.forEach(m => {
-    muscles[m] = Math.round(Math.max(0, muscles[m] - (muscles[m] / sumOthers) * diff));
+  otherMuscles.forEach((m) => {
+    muscles[m] = Math.round(
+      Math.max(0, muscles[m] - (muscles[m] / sumOthers) * diff)
+    );
   });
 
   // Correct rounding errors to ensure total = 300
@@ -141,7 +154,7 @@ const encodedJSON = ref("");
 function generateEncodedURL() {
   const jsonString = JSON.stringify(workoutConfig.value);
   const encoded = encodeURIComponent(jsonString);
-  router.push({ path: '/show-workout', query: { workoutConfig: encoded }})
+  router.push({ path: "/show-workout", query: { workoutConfig: encoded } });
 }
 </script>
 
