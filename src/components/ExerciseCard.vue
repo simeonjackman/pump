@@ -1,6 +1,6 @@
 <template>
   <div
-    class="exercise-card bg-white shadow-md rounded-xl p-6 mb-6 border border-gray-200 cursor-pointer"
+    class="exercise-card bg-white shadow-md rounded-bl-xl rounded-br-xl p-6 mb-6 border border-gray-200 cursor-pointer"
     @click="showDetails = !showDetails"
   >
     <!-- Exercise Name -->

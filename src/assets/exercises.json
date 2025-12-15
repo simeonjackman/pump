@@ -1,19 +1,5 @@
 {
   "exercises": [
-      {
-      "name": "Running",
-      "description": "Move your legs and run.",
-      "cardio_vs_strength": 5,
-      "difficulty": 5,
-      "muscle_usage": {
-        "arms": 5,
-        "back": 5,
-        "abs": 10,
-        "legs": 90,
-        "chest": 0,
-        "glutes": 30
-      }
-    },
     {
       "name": "Pull-ups",
       "description": "Hang from a bar and pull your body up until your chin is above the bar.",
@@ -28,6 +14,21 @@
         "glutes": 0
       }
     },
+    {
+      "name": "Running",
+      "description": "Move your legs and run.",
+      "cardio_vs_strength": 5,
+      "difficulty": 5,
+      "muscle_usage": {
+        "arms": 5,
+        "back": 5,
+        "abs": 10,
+        "legs": 90,
+        "chest": 0,
+        "glutes": 30
+      }
+    },
+
     {
       "name": "Push-ups",
       "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",

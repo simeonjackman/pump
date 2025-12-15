@@ -1,5 +1,5 @@
-import json from "./assets/exercises.json";
+import ex from "./assets/exercises.json";
+import fm from "./assets/formats.json";
 
-const exercises = json.exercises;
-
-export default exercises;
+export var  exercises = ex.exercises;
+export var formats = fm.formats;

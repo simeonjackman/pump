@@ -7,12 +7,20 @@
       Click on a exercise to see more information.
     </p>
 
-    <div class="p-1 lg:p-6">
+    <!-- <div class="p-1 lg:p-6">
+      <FormatCard :format="formats[1]" />
       <ExerciseCard
         v-for="exercise in exercises"
         :key="exercise.name"
         :exercise="exercise"
       />
+    </div> -->
+
+    <div class="p-1 lg:p-6">
+      <FormatCard :format="formats[1]" />
+      <ExerciseCard :exercise="exercises[0]" />
+      <FormatCard :format="formats[0]" />
+      <ExerciseCard :exercise="exercises[2]" />
     </div>
 
     <div
@@ -34,9 +42,10 @@
 
 <script setup>
 import ExerciseCard from "./ExerciseCard.vue";
-import exercises from "../workout.js";
+import { exercises, formats } from "../workout.js";
 import { ref, onMounted } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { useRoute } from "vue-router";
+import FormatCard from "./FormatCard.vue";
 
 const route = useRoute();
 const decodedConfig = ref(null);
