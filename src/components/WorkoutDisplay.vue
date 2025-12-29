@@ -7,21 +7,21 @@
       Click on a exercise to see more information.
     </p>
 
-    <!-- <div class="p-1 lg:p-6">
-      <FormatCard :format="formats[1]" />
+    <!-- <div class="p-1 lg:p-6" v-if="generatedWorkout">
+      <FormatCard :format="generatedWorkout.formats" />
       <ExerciseCard
-        v-for="exercise in exercises"
+        v-for="exercise in generatedWorkout.exercises"
         :key="exercise.name"
         :exercise="exercise"
       />
     </div> -->
 
-    <div class="p-1 lg:p-6">
+    <!-- <div class="p-1 lg:p-6">
       <FormatCard :format="formats[1]" />
       <ExerciseCard :exercise="exercises[0]" />
       <FormatCard :format="formats[0]" />
       <ExerciseCard :exercise="exercises[2]" />
-    </div>
+    </div> -->
 
     <div
       v-if="decodedConfig"
@@ -42,7 +42,7 @@
 
 <script setup>
 import ExerciseCard from "./ExerciseCard.vue";
-import { exercises, formats } from "../workout.js";
+import { Workout } from "../workout.js";
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import FormatCard from "./FormatCard.vue";
@@ -59,6 +59,18 @@ onMounted(() => {
       // Decode and parse JSON
       const jsonString = decodeURIComponent(encodedConfig);
       decodedConfig.value = JSON.parse(jsonString);
+      const workout = new Workout({
+        cardio_vs_strength: 40,
+        difficulty: 60,
+        length: 80,
+        muscle_usage: {
+          legs: 80,
+          glutes: 70,
+        },
+      });
+
+      const generatedWorkout = workout.workoutSelector();
+      console.log(generatedWorkout);
     }
   } catch (e) {
     decodedConfig.value = null;

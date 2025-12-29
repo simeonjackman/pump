@@ -3,6 +3,7 @@
     "name": "Pull-ups",
     "description": "Hang from a bar and pull your body up until your chin is above the bar.",
     "cardio_vs_strength": 90,
+    "rep_length": 2,
     "difficulty": 80,
     "muscle_usage": {
       "arms": 90,
@@ -17,6 +18,7 @@
     "name": "Running",
     "description": "Move your legs and run.",
     "cardio_vs_strength": 5,
+    "rep_length": 60,
     "difficulty": 5,
     "muscle_usage": {
       "arms": 5,
@@ -32,6 +34,7 @@
     "name": "Push-ups",
     "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",
     "cardio_vs_strength": 80,
+    "rep_length": 1,
     "difficulty": 50,
     "muscle_usage": {
       "arms": 90,
@@ -46,6 +49,7 @@
     "name": "Dips",
     "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
     "cardio_vs_strength": 85,
+    "rep_length": 2,
     "difficulty": 70,
     "muscle_usage": {
       "arms": 90,
@@ -60,6 +64,7 @@
     "name": "Squats",
     "description": "Bend your knees and lower your hips, then stand back up, engaging your legs and glutes.",
     "cardio_vs_strength": 50,
+    "rep_length": 1,
     "difficulty": 10,
     "muscle_usage": {
       "arms": 5,
@@ -74,6 +79,7 @@
     "name": "Lunges",
     "description": "Step forward with one leg, lower your body, then push back to starting position.",
     "cardio_vs_strength": 55,
+    "rep_length": 2,
     "difficulty": 15,
     "muscle_usage": {
       "arms": 5,
@@ -88,6 +94,7 @@
     "name": "Burpees",
     "description": "A full-body exercise involving a squat, push-up, and jump.",
     "cardio_vs_strength": 65,
+    "rep_length": 4,
     "difficulty": 75,
     "muscle_usage": {
       "arms": 60,
@@ -102,6 +109,7 @@
     "name": "Step-ups",
     "description": "Step onto a raised platform and back down, engaging legs and glutes.",
     "cardio_vs_strength": 35,
+    "rep_length": 2,
     "difficulty": 25,
     "muscle_usage": {
       "arms": 5,
@@ -116,6 +124,7 @@
     "name": "Plank",
     "description": "Hold a push-up position to strengthen core muscles.",
     "cardio_vs_strength": 50,
+    "rep_length": 20,
     "difficulty": 30,
     "muscle_usage": {
       "arms": 40,
@@ -130,6 +139,7 @@
     "name": "Jump Rope",
     "description": "Jump continuously over a rope, great for cardio and coordination.",
     "cardio_vs_strength": 5,
+    "rep_length": 0.5,
     "difficulty": 10,
     "muscle_usage": {
       "arms": 10,
