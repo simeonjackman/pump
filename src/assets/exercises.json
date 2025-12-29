@@ -1,145 +1,143 @@
-{
-  "exercises": [
-    {
-      "name": "Pull-ups",
-      "description": "Hang from a bar and pull your body up until your chin is above the bar.",
-      "cardio_vs_strength": 90,
-      "difficulty": 80,
-      "muscle_usage": {
-        "arms": 90,
-        "back": 85,
-        "abs": 30,
-        "legs": 0,
-        "chest": 0,
-        "glutes": 0
-      }
-    },
-    {
-      "name": "Running",
-      "description": "Move your legs and run.",
-      "cardio_vs_strength": 5,
-      "difficulty": 5,
-      "muscle_usage": {
-        "arms": 5,
-        "back": 5,
-        "abs": 10,
-        "legs": 90,
-        "chest": 0,
-        "glutes": 30
-      }
-    },
-
-    {
-      "name": "Push-ups",
-      "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",
-      "cardio_vs_strength": 80,
-      "difficulty": 50,
-      "muscle_usage": {
-        "arms": 90,
-        "back": 5,
-        "abs": 20,
-        "legs": 5,
-        "chest": 70,
-        "glutes": 5
-      }
-    },
-    {
-      "name": "Dips",
-      "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
-      "cardio_vs_strength": 85,
-      "difficulty": 70,
-      "muscle_usage": {
-        "arms": 90,
-        "back": 40,
-        "abs": 20,
-        "legs": 0,
-        "chest": 10,
-        "glutes": 0
-      }
-    },
-    {
-      "name": "Squats",
-      "description": "Bend your knees and lower your hips, then stand back up, engaging your legs and glutes.",
-      "cardio_vs_strength": 50,
-      "difficulty": 10,
-      "muscle_usage": {
-        "arms": 5,
-        "back": 5,
-        "abs": 5,
-        "legs": 85,
-        "chest": 0,
-        "glutes": 70
-      }
-    },
-    {
-      "name": "Lunges",
-      "description": "Step forward with one leg, lower your body, then push back to starting position.",
-      "cardio_vs_strength": 55,
-      "difficulty": 15,
-      "muscle_usage": {
-        "arms": 5,
-        "back": 5,
-        "abs": 15,
-        "legs": 80,
-        "chest": 0,
-        "glutes": 75
-      }
-    },
-    {
-      "name": "Burpees",
-      "description": "A full-body exercise involving a squat, push-up, and jump.",
-      "cardio_vs_strength": 65,
-      "difficulty": 75,
-      "muscle_usage": {
-        "arms": 60,
-        "back": 40,
-        "abs": 30,
-        "legs": 50,
-        "chest": 50,
-        "glutes": 50
-      }
-    },
-    {
-      "name": "Step-ups",
-      "description": "Step onto a raised platform and back down, engaging legs and glutes.",
-      "cardio_vs_strength": 35,
-      "difficulty": 25,
-      "muscle_usage": {
-        "arms": 5,
-        "back": 10,
-        "abs": 5,
-        "legs": 85,
-        "chest": 0,
-        "glutes": 80
-      }
-    },
-    {
-      "name": "Plank",
-      "description": "Hold a push-up position to strengthen core muscles.",
-      "cardio_vs_strength": 50,
-      "difficulty": 30,
-      "muscle_usage": {
-        "arms": 40,
-        "back": 10,
-        "abs": 75,
-        "legs": 20,
-        "chest": 10,
-        "glutes": 10
-      }
-    },
-    {
-      "name": "Jump Rope",
-      "description": "Jump continuously over a rope, great for cardio and coordination.",
-      "cardio_vs_strength": 5,
-      "difficulty": 10,
-      "muscle_usage": {
-        "arms": 10,
-        "back": 10,
-        "abs": 5,
-        "legs": 80,
-        "chest": 5,
-        "glutes": 10
-      }
+[
+  {
+    "name": "Pull-ups",
+    "description": "Hang from a bar and pull your body up until your chin is above the bar.",
+    "cardio_vs_strength": 90,
+    "difficulty": 80,
+    "muscle_usage": {
+      "arms": 90,
+      "back": 85,
+      "abs": 30,
+      "legs": 0,
+      "chest": 0,
+      "glutes": 0
     }
-  ]
-}
+  },
+  {
+    "name": "Running",
+    "description": "Move your legs and run.",
+    "cardio_vs_strength": 5,
+    "difficulty": 5,
+    "muscle_usage": {
+      "arms": 5,
+      "back": 5,
+      "abs": 10,
+      "legs": 90,
+      "chest": 0,
+      "glutes": 30
+    }
+  },
+
+  {
+    "name": "Push-ups",
+    "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",
+    "cardio_vs_strength": 80,
+    "difficulty": 50,
+    "muscle_usage": {
+      "arms": 90,
+      "back": 5,
+      "abs": 20,
+      "legs": 5,
+      "chest": 70,
+      "glutes": 5
+    }
+  },
+  {
+    "name": "Dips",
+    "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
+    "cardio_vs_strength": 85,
+    "difficulty": 70,
+    "muscle_usage": {
+      "arms": 90,
+      "back": 40,
+      "abs": 20,
+      "legs": 0,
+      "chest": 10,
+      "glutes": 0
+    }
+  },
+  {
+    "name": "Squats",
+    "description": "Bend your knees and lower your hips, then stand back up, engaging your legs and glutes.",
+    "cardio_vs_strength": 50,
+    "difficulty": 10,
+    "muscle_usage": {
+      "arms": 5,
+      "back": 5,
+      "abs": 5,
+      "legs": 85,
+      "chest": 0,
+      "glutes": 70
+    }
+  },
+  {
+    "name": "Lunges",
+    "description": "Step forward with one leg, lower your body, then push back to starting position.",
+    "cardio_vs_strength": 55,
+    "difficulty": 15,
+    "muscle_usage": {
+      "arms": 5,
+      "back": 5,
+      "abs": 15,
+      "legs": 80,
+      "chest": 0,
+      "glutes": 75
+    }
+  },
+  {
+    "name": "Burpees",
+    "description": "A full-body exercise involving a squat, push-up, and jump.",
+    "cardio_vs_strength": 65,
+    "difficulty": 75,
+    "muscle_usage": {
+      "arms": 60,
+      "back": 40,
+      "abs": 30,
+      "legs": 50,
+      "chest": 50,
+      "glutes": 50
+    }
+  },
+  {
+    "name": "Step-ups",
+    "description": "Step onto a raised platform and back down, engaging legs and glutes.",
+    "cardio_vs_strength": 35,
+    "difficulty": 25,
+    "muscle_usage": {
+      "arms": 5,
+      "back": 10,
+      "abs": 5,
+      "legs": 85,
+      "chest": 0,
+      "glutes": 80
+    }
+  },
+  {
+    "name": "Plank",
+    "description": "Hold a push-up position to strengthen core muscles.",
+    "cardio_vs_strength": 50,
+    "difficulty": 30,
+    "muscle_usage": {
+      "arms": 40,
+      "back": 10,
+      "abs": 75,
+      "legs": 20,
+      "chest": 10,
+      "glutes": 10
+    }
+  },
+  {
+    "name": "Jump Rope",
+    "description": "Jump continuously over a rope, great for cardio and coordination.",
+    "cardio_vs_strength": 5,
+    "difficulty": 10,
+    "muscle_usage": {
+      "arms": 10,
+      "back": 10,
+      "abs": 5,
+      "legs": 80,
+      "chest": 5,
+      "glutes": 10
+    }
+  }
+]

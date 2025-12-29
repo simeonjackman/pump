@@ -1,18 +1,16 @@
-{
-  "formats": [
-    {
-      "type": "Straight Sets",
-      "rounds": 3,
-      "reps": 5,
-      "break": 30,
-      "description": "Straight sets, number of sets times the number of reps."
-    },
-    {
-      "type": "Pyramid Sets",
-      "rounds": 5,
-      "reps": "3+",
-      "break": 30,
-      "description": "Each set you increase the number of reps. After the the given number of rounds you decrease the number of reps per set."
-    }
-  ]
-}
+[
+  {
+    "type": "Straight Sets",
+    "rounds": 3,
+    "reps": 5,
+    "break": 30,
+    "description": "Straight sets, number of sets times the number of reps."
+  },
+  {
+    "type": "Pyramid Sets",
+    "rounds": 5,
+    "reps": "3+",
+    "break": 30,
+    "description": "Each set you increase the number of reps. After the the given number of rounds you decrease the number of reps per set."
+  }
+]
