@@ -6,9 +6,6 @@ export class Workout {
   constructor(config = {}) {
     // Default configuration
     this.config = config;
-    console.log("config");
-    console.log(config.value);
-
     this.exercises = exercisesData.map(
       (exerciseJson) => new Exercise(exerciseJson)
     );
