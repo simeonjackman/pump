@@ -7,21 +7,14 @@
       Click on a exercise to see more information.
     </p>
 
-    <div class="p-1 lg:p-6" v-if="generatedWorkout">
-      <FormatCard :format="generatedWorkout.formats" />
-      <ExerciseCard
-        v-for="exercise in generatedWorkout.exercises"
-        :key="exercise.name"
-        :exercise="exercise"
-      />
+    <div
+      class="p-1 lg:p-6"
+      v-if="generatedWorkout"
+      v-for="exerciseWithFormat in generatedWorkout.exercisesWithFormats"
+    >
+      <FormatCard :format="exerciseWithFormat.format" />
+      <ExerciseCard :exercise="exerciseWithFormat.exercise" />
     </div>
-
-    <!-- <div class="p-1 lg:p-6">
-      <FormatCard :format="formats[1]" />
-      <ExerciseCard :exercise="exercises[0]" />
-      <FormatCard :format="formats[0]" />
-      <ExerciseCard :exercise="exercises[2]" />
-    </div> -->
 
     <div
       v-if="decodedConfig"

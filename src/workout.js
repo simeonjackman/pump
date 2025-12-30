@@ -39,28 +39,32 @@ export class Workout {
     // 1. Score exercises
     const scoredExercises = this.exercises
       .map((ex) => ({
-        ...ex,
+        exercise: ex,
         score: this.scoreExercise(ex),
       }))
       .sort((a, b) => b.score - a.score);
 
-    // 2. Select number of exercises based on length (simple mapping)
-    const exerciseCount = Math.max(3, Math.round(this.config.length / 20));
+    // 2. Select number of exercises based on length
+    const exerciseCount = Math.max(3, Math.round(this.config.length / 10));
 
     const selectedExercises = scoredExercises.slice(0, exerciseCount);
 
-    // 3. Pick a format based on workout focus
-    const selectedFormat =
-      this.formats.find(
-        (f) =>
-          Math.abs(f.cardio_vs_strength - this.config.cardio_vs_strength) < 20
-      ) || this.formats[0];
+    // 3. Assign a format to EACH exercise
+    const exercisesWithFormats = selectedExercises.map(({ exercise }) => {
+      const format =
+        this.formats[Math.floor(Math.random() * this.formats.length)];
+      const time = "10";
+      return {
+        exercise,
+        format,
+        time,
+      };
+    });
 
     // 4. Return structured workout
     return {
       config: this.config,
-      formats: selectedFormat,
-      exercises: selectedExercises.map(({ score, ...ex }) => ex),
+      exercisesWithFormats: exercisesWithFormats,
     };
   }
 }
