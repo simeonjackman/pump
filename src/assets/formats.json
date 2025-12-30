@@ -2,15 +2,36 @@
   {
     "type": "Straight Sets",
     "rounds": 3,
+    "reps": 8,
+    "break": 30,
+    "description": "Straight sets, number of sets times the number of reps."
+  },
+  {
+    "type": "Straight Sets",
+    "rounds": 5,
     "reps": 5,
     "break": 30,
     "description": "Straight sets, number of sets times the number of reps."
   },
   {
     "type": "Pyramid Sets",
+    "rounds": 9,
+    "reps": "3+2",
+    "break": 20,
+    "description": "Each set you increase the number of reps. After the the given number of rounds you decrease the number of reps per set."
+  },
+  {
+    "type": "Pyramid Sets",
     "rounds": 5,
-    "reps": "3+",
+    "reps": "8+2",
     "break": 30,
     "description": "Each set you increase the number of reps. After the the given number of rounds you decrease the number of reps per set."
+  },
+  {
+    "type": "Cluster Sets",
+    "rounds": 15,
+    "reps": 3,
+    "break": 10,
+    "description": "High number of sets with very few reps. Very short breaks in between."
   }
 ]

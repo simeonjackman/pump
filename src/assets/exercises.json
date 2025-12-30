@@ -30,6 +30,21 @@
     }
   },
   {
+    "name": "Sit-ups",
+    "description": "Lie on your back with bent knees and feet flat, then use your abdominal muscles to lift your entire upper body off the floor towards your knees.",
+    "cardio_vs_strength": 60,
+    "rep_length": 2,
+    "difficulty": 30,
+    "muscle_usage": {
+      "arms": 0,
+      "back": 5,
+      "abs": 80,
+      "legs": 15,
+      "chest": 5,
+      "glutes": 5
+    }
+  },
+  {
     "name": "Dips",
     "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
     "cardio_vs_strength": 85,
