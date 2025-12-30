@@ -51,11 +51,10 @@ const route = useRoute();
 const encodedConfig = route.query.workoutConfig;
 let decodedConfig = {};
 
+// Decode and parse JSON
 if (encodedConfig) {
-  // Decode and parse JSON
   const jsonString = decodeURIComponent(encodedConfig);
   decodedConfig = JSON.parse(jsonString);
-  console.log(decodedConfig);
 }
 
 const workout = new Workout(decodedConfig);

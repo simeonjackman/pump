@@ -10,13 +10,8 @@ export class Workout {
       (exerciseJson) => new Exercise(exerciseJson)
     );
     this.formats = formatsData;
-  }
-
-  /**
-   * Scores how well an exercise matches the workout config
-   */
-  scoreExercise(exercise) {
-    const targetVector = [
+    // Define which properties make up the target vector for calculating a workout
+    this.targetVector = [
       this.config.cardio_vs_strength,
       this.config.muscle_usage.arms,
       this.config.muscle_usage.back,
@@ -25,13 +20,15 @@ export class Workout {
       this.config.muscle_usage.chest,
       this.config.muscle_usage.glutes,
     ];
+  }
 
+  /**
+   * Scores how well an exercise matches the workout config
+   */
+  scoreExercise(exercise) {
     const exerciseVector = exercise.toVector();
 
-    let score = 0;
-    for (let i = 0; i < targetVector.length; i++) {
-      score -= Math.abs(targetVector[i] - exerciseVector[i]);
-    }
+    const score = cosineSimilarity(this.targetVector, exerciseVector);
     return score;
   }
 
@@ -66,4 +63,25 @@ export class Workout {
       exercises: selectedExercises.map(({ score, ...ex }) => ex),
     };
   }
+}
+
+function cosineSimilarity(vecA, vecB) {
+  if (vecA.length !== vecB.length) {
+    throw new Error("Vectors must have the same dimensions");
+  }
+
+  // Calculate dot product: A·B = Σ(A[i] * B[i])
+  const dotProduct = vecA.reduce((sum, a, i) => sum + a * vecB[i], 0);
+
+  // Calculate magnitudes using Math.hypot()
+  const magnitudeA = Math.hypot(...vecA);
+  const magnitudeB = Math.hypot(...vecB);
+
+  // Check for zero magnitude
+  if (magnitudeA === 0 || magnitudeB === 0) {
+    return 0;
+  }
+
+  // Calculate cosine similarity: (A·B) / (|A|*|B|)
+  return dotProduct / (magnitudeA * magnitudeB);
 }
