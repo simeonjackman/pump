@@ -49,7 +49,7 @@ export class Workout {
 
     const selectedExercises = scoredExercises.slice(0, exerciseCount);
 
-    // 3. Assign a format to EACH exercise
+    // 3. Assign a format to each exercise
     const exercisesWithFormats = selectedExercises.map(({ exercise }) => {
       const format =
         this.formats[Math.floor(Math.random() * this.formats.length)];

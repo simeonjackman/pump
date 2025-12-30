@@ -3,7 +3,7 @@
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
       Your Workout
     </h2>
-    <p class="mb-4 text-gray-700 text-center">
+    <p class="text-gray-700 text-center">
       Click on a exercise to see more information.
     </p>
 
