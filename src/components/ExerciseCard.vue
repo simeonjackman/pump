@@ -70,13 +70,17 @@
 <script setup>
 import { ref } from "vue";
 
-defineProps({
+const props = defineProps({
   exercise: {
     type: Object,
     required: true,
   },
+  withDetails: {
+    type: Boolean,
+    required: false,
+  },
 });
 
 // Track whether details are shown
-const showDetails = ref(false);
+const showDetails = ref(props.withDetails);
 </script>
