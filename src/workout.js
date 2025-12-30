@@ -20,6 +20,8 @@ export class Workout {
       this.config.muscle_usage.chest,
       this.config.muscle_usage.glutes,
     ];
+    //Copy the target vector for calculations (therefore slice is needed)
+    this.currentTargetVector = this.targetVector.slice();
   }
 
   /**
@@ -28,12 +30,12 @@ export class Workout {
   scoreExercise(exercise) {
     const exerciseVector = exercise.toVector();
 
-    const score = cosineSimilarity(this.targetVector, exerciseVector);
+    const score = cosineSimilarity(this.currentTargetVector, exerciseVector);
     return score;
   }
 
   /**
-   * Selects exercises + a format and builds a workout
+   * Selects exercises + formats and builds a workout
    */
   workoutSelector() {
     // 1. Score exercises
