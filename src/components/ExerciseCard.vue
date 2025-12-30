@@ -1,16 +1,18 @@
 <template>
   <div
-    class="exercise-card bg-white shadow-md rounded-bl-xl rounded-br-xl p-6 mb-6 border border-gray-200 cursor-pointer"
+    class="exercise-card bg-white shadow-md rounded-tl-xl rounded-tr-xl p-6 mt-6 border border-gray-200 cursor-pointer"
     @click="showDetails = !showDetails"
   >
     <!-- Exercise Name -->
-    <h3 class="text-xl font-bold mb-2 text-gray-800">{{ exercise.name }}</h3>
-    <p class="mb-4 text-gray-700">{{ exercise.description }}</p>
+    <h3 class="text-2xl text-center font-bold text-gray-800">
+      {{ exercise.name }}
+    </h3>
 
     <!-- Collapsible Details -->
     <div v-show="showDetails" class="transition-all">
       <!-- Cardio vs Strength -->
       <div class="mb-4">
+        <p class="mt-4 mb-4 text-gray-700">{{ exercise.description }}</p>
         <label class="block text-gray-700 font-medium mb-1">
           Cardio vs Strength: {{ exercise.cardio_vs_strength }}
         </label>

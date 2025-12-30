@@ -12,8 +12,8 @@
       v-if="generatedWorkout"
       v-for="exerciseWithFormat in generatedWorkout.exercisesWithFormats"
     >
-      <FormatCard :format="exerciseWithFormat.format" />
       <ExerciseCard :exercise="exerciseWithFormat.exercise" />
+      <FormatCard :format="exerciseWithFormat.format" />
     </div>
 
     <div

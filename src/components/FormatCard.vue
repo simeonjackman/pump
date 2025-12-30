@@ -1,18 +1,21 @@
 <template>
   <div
-    class="text-center format-card bg-white shadow-md rounded-tl-xl rounded-tr-xl p-6 border border-gray-200 cursor-pointer"
+    class="text-center format-card bg-white shadow-md rounded-bl-xl rounded-br-xl p-6 border border-gray-200 cursor-pointer"
     @click="showDetails = !showDetails"
   >
     <!-- Exercise Name -->
-    <h3 class="text-xl font-bold text-gray-800">
-      {{ format.type }}: {{ format.rounds }} x {{ format.reps }}
-    </h3>
+    <div class="xl:flex justify-between">
+      <p class="text-xl font-bold text-gray-800">
+        {{ format.type }}: {{ format.rounds }} x {{ format.reps }}
+      </p>
+      <span> {{ format.break }}s break between sets </span>
+    </div>
 
     <!-- Collapsible Details -->
     <div v-show="showDetails" class="transition-all">
       <p class="text-gray-700">
         {{ format.rounds }} rounds of {{ format.type }}.
-        {{ format.description }} with a break of {{ format.break }} seconds
+        {{ format.description }}
         between rounds.
       </p>
     </div>
