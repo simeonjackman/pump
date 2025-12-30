@@ -33,19 +33,6 @@ export class Workout {
       exercise.cardio_vs_strength - this.config.cardio_vs_strength
     );
 
-    // Difficulty
-    score -= Math.abs(
-      exercise.difficulty - this.config.difficulty
-    );
-
-    // Muscle usage similarity
-    for (const muscle in this.config.muscle_usage) {
-      score -= Math.abs(
-        (exercise.muscle_usage[muscle] ?? 0) -
-        this.config.muscle_usage[muscle]
-      );
-    }
-
     return score;
   }
 
