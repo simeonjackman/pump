@@ -15,22 +15,6 @@
     }
   },
   {
-    "name": "Running",
-    "description": "Move your legs and run.",
-    "cardio_vs_strength": 5,
-    "rep_length": 60,
-    "difficulty": 5,
-    "muscle_usage": {
-      "arms": 5,
-      "back": 5,
-      "abs": 10,
-      "legs": 90,
-      "chest": 0,
-      "glutes": 30
-    }
-  },
-
-  {
     "name": "Push-ups",
     "description": "Lower and raise your body with your hands on the ground, keeping your body straight.",
     "cardio_vs_strength": 80,
@@ -118,21 +102,6 @@
       "legs": 85,
       "chest": 0,
       "glutes": 80
-    }
-  },
-  {
-    "name": "Plank",
-    "description": "Hold a push-up position to strengthen core muscles.",
-    "cardio_vs_strength": 50,
-    "rep_length": 20,
-    "difficulty": 30,
-    "muscle_usage": {
-      "arms": 40,
-      "back": 10,
-      "abs": 75,
-      "legs": 20,
-      "chest": 10,
-      "glutes": 10
     }
   },
   {
