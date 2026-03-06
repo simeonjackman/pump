@@ -55,7 +55,13 @@ export class Workout {
     const exercisesWithFormats = selectedExercises.map(({ exercise }) => {
       const format =
         this.formats[Math.floor(Math.random() * this.formats.length)];
-      const time = "10";
+      const total_reps = format.reps.reduce(function (a, b) {
+        return a + b;
+      });
+      const total_break_time = (format.reps.length - 1) * format.break;
+      const time = Math.ceil(
+        (exercise.rep_length * total_reps + total_break_time) / 60
+      );
       return {
         exercise,
         format,

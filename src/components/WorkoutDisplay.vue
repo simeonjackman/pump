@@ -12,7 +12,13 @@
       v-if="generatedWorkout"
       v-for="exerciseWithFormat in generatedWorkout.exercisesWithFormats"
     >
+      <div
+        class="bg-gray-100 border border-gray-200 absolute mt-7 ml-1 p-1 rounded-full"
+      >
+        {{ exerciseWithFormat.time }}m
+      </div>
       <ExerciseCard :exercise="exerciseWithFormat.exercise" />
+
       <FormatCard :format="exerciseWithFormat.format" />
     </div>
 

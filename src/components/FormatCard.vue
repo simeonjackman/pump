@@ -6,7 +6,12 @@
     <!-- Exercise Name -->
     <div class="xl:flex justify-between">
       <p class="text-xl font-bold text-gray-800">
-        {{ format.type }}: {{ format.rounds }} x {{ format.reps }}
+        {{ format.type }}:
+        {{
+          format.type == "Pyramid Sets"
+            ? format.reps
+            : format.reps.length + " x " + format.reps[0]
+        }}
       </p>
       <span> {{ format.break }}s break between sets </span>
     </div>
@@ -14,7 +19,7 @@
     <!-- Collapsible Details -->
     <div v-show="showDetails" class="transition-all">
       <p class="text-gray-700">
-        {{ format.rounds }} rounds of {{ format.type }}.
+        {{ format.reps.length }} rounds of {{ format.type }}.
         {{ format.description }}
         between rounds.
       </p>
