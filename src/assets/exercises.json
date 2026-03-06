@@ -45,6 +45,36 @@
     }
   },
   {
+    "name": "Mountain Climbers",
+    "description": "Start in a high plank position with hands under shoulders and body straight, then quickly drive one knee toward your chest and switch legs in a running motion while keeping your core tight and hips low.",
+    "cardio_vs_strength": 40,
+    "rep_length": 1,
+    "difficulty": 40,
+    "muscle_usage": {
+      "arms": 30,
+      "back": 5,
+      "abs": 70,
+      "legs": 35,
+      "chest": 15,
+      "glutes": 5
+    }
+  },
+  {
+    "name": "Side Plank Twist",
+    "description": "Start in a side plank on one forearm with your body in a straight line, then rotate your torso to bring your top arm under your body and twist back open while keeping your core tight and hips lifted.",
+    "cardio_vs_strength": 60,
+    "rep_length": 1.5,
+    "difficulty": 50,
+    "muscle_usage": {
+      "arms": 35,
+      "back": 15,
+      "abs": 80,
+      "legs": 15,
+      "chest": 20,
+      "glutes": 5
+    }
+  },
+  {
     "name": "Dips",
     "description": "Lower and raise your body using parallel bars or a bench, focusing on triceps and chest.",
     "cardio_vs_strength": 85,
@@ -132,6 +162,21 @@
       "legs": 80,
       "chest": 5,
       "glutes": 10
+    }
+  },
+  {
+    "name": "Jumping Jacks",
+    "description": "Jump your feet out to the sides while simultaneously raising arms overhead, then return to a standing position.",
+    "cardio_vs_strength": 10,
+    "rep_length": 0.5,
+    "difficulty": 5,
+    "muscle_usage": {
+      "arms": 20,
+      "back": 10,
+      "abs": 10,
+      "legs": 80,
+      "chest": 15,
+      "glutes": 25
     }
   }
 ]
